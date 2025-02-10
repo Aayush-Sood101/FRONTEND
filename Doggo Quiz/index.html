@@ -251,6 +251,10 @@
       function getBreedFromURL(url) {
         // The string method .split(char) may come in handy
         // Try to use destructuring as much as you can
+        let split1 = url.split("/");
+        let split2 = split1.split("-");
+        let ans = split2 + " " + split1;
+        return ans;
       }
 
       // TODO 3
