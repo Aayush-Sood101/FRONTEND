@@ -330,6 +330,10 @@
       // TODO 5
       // Asynchronously call the loadQuizData() function,
       // Then call renderQuiz() with the returned imageUrl, correctAnswer, and choices
+
+      const [imgUrl , correctAns , choices] = await loadQuizData();
+      renderQuiz(imgUrl , correctAns , choices);
+
     </script>
   </body>
 </html>
